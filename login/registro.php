@@ -1,17 +1,17 @@
 
 <?php
 
-	require 'funciones/conexion.php';
-	require 'funciones/funcs.php';
+	//require 'funciones/conexion.php';
+	//require 'funciones/funcs.php';
 
 	echo "joder tio";
-	$errors = array();
+	//$errors = array();
 
-	if(!empty($_POST)){
+	//if(!empty($_POST)){
 
-		echo "hola mundo";
+	//	echo "hola mundo";
 
-	}
+	//}
 
 
 ?>
