@@ -14,7 +14,14 @@ BD name: 	u663545672_sig
 User BD:	u663545672_sig
 
 
-recaptcha:
+recaptcha: hostinger
 Clave del siteo:	6LcqKXYUAAAAAMOkvghFCxBOZQ-uPP5ad9hRSh0C
 Clave secreta:		6LcqKXYUAAAAAP3qMX8B6EJf-cmJef4ly9_yi_DY
 
+recaptcha: localhost
+Clave del siteo:	6LfngHYUAAAAAJI3lGjk1k0NmUHQi-ai-Cf2TNEQ
+Clave secreta:		6LfngHYUAAAAAPbisYWPn7AMtfEJj7Q86Z-MITU5
+
+recaptcha: hostinger
+Clave del siteo:	6LcmgnYUAAAAAA66sltyV65Cs_vvSxBFRaUSwNhi
+Clave secreta:		6LcmgnYUAAAAABsexpbK9cCHzTQXeOGUfpkH09eC

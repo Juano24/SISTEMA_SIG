@@ -6,25 +6,26 @@
 	
 	$errors = array();
 
-	alert("joder tio");
+	//1234@123.co
 
 	if(!empty($_POST)){
 
-		$nombre = $mysqli->real_scape_string($_POST['nombre']);
-		$usuario = $mysqli->real_scape_string($_POST['usuario']);
-		$password = $mysqli->real_scape_string($_POST['password']);
-		$conf_password = $mysqli->real_scape_string($_POST['conf_password']);
-		$email = $mysqli->real_scape_string($_POST['email']);
-		$captcha = $mysqli->real_scape_string($_POST['g-recaptcha-response']);
+		$nombre = $mysqli->real_escape_string($_POST['nombre']);
+		$usuario = $mysqli->real_escape_string($_POST['usuario']);
+		$password = $mysqli->real_escape_string($_POST['password']);
+		$conf_password = $mysqli->real_escape_string($_POST['conf_password']);
+		$email = $mysqli->real_escape_string($_POST['email']);
+		$captcha = $mysqli->real_escape_string($_POST['g-recaptcha-response']);
+
 
 		$activo = 0;
 		$tipo_usuario = 2;
-		$secret = '6LcqKXYUAAAAAP3qMX8B6EJf-cmJef4ly9_yi_DY';
-
+		$secret = '6LcmgnYUAAAAABsexpbK9cCHzTQXeOGUfpkH09eC';
+		
 		if(!$captcha){
 			$errors[] = "Por Favor Verifica el captcha";
 		}
-
+		
 		//validacion por el lado del servidor y no solo de html
 		if(isNull($nombre, $usuario, $password, $conf_password, $email)){
 			$errors[] = "Debe llenar todos los campos";
@@ -56,8 +57,8 @@
 		}
 
 		if(count($errors)==0){
-			echo "entro";
-			/*
+			
+			
 			$response = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=$secret&response=$captcha");
 
 			$arr = json_decode($response, TRUE);
@@ -66,14 +67,14 @@
 
 				$hash_passwords = hashPassword($password);
 				$token = generateToken();
-				$Registro = registraUsuario($usuario, $hash_passwords, $nombre, $email, $activo, $token, $tipo_usuario);
+				$registro = registraUsuario($usuario, $hash_passwords, $nombre, $email, $activo, $token, $tipo_usuario);
 
 				if($registro > 0){
 
 					$url = 'http://'.$_SERVER["SERVER_NAME"].'/SISTEMA_SIG/login/activar.php?id='.$registro.'&val='.$token;
 
 					$asunto = 'Wesleyana Casa De Dios Activate - SISTEMA SIG';
-					$cuerpo = "Estimado líder $Nombre: <br /><br /> De Clic en el siguiente enlace para continuar con el proceso de registro  <a href='$url'>Activar Cuenta</a>";
+					$cuerpo = "Estimado líder $nombre: <br /><br /> De Clic en el siguiente enlace para continuar con el proceso de registro  <a href='$url'>Activar Cuenta</a>";
 
 					if(enviarEmail($email, $nombre, $asunto, $cuerpo))
 					{
@@ -99,15 +100,15 @@
 				$errors[] = "Error al comprobar captcha";
 			}
 
-			*/
-
+			
+		
 		}
 
 
 
-
+	
 	}
-
+	
 
 ?>
 <html>
@@ -175,7 +176,7 @@
 							
 							<div class="form-group">
 								<label for="captcha" class="col-md-3 control-label"></label>
-								<div class="g-recaptcha col-md-9" data-sitekey="6LcqKXYUAAAAAMOkvghFCxBOZQ-uPP5ad9hRSh0C"></div>
+								<div class="g-recaptcha col-md-9" data-sitekey="6LcmgnYUAAAAAA66sltyV65Cs_vvSxBFRaUSwNhi"></div>
 							</div>
 							
 							<div class="form-group">                                      

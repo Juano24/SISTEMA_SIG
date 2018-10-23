@@ -1,5 +1,7 @@
 <?php
-	
+	function funPrueba($value){
+		echo "esta impimiendo en fun prueba $value";
+	}
 	function isNull($nombre, $user, $pass, $pass_con, $email){
 		if(strlen(trim($nombre)) < 1 || strlen(trim($user)) < 1 || strlen(trim($pass)) < 1 || strlen(trim($pass_con)) < 1 || strlen(trim($email)) < 1)
 		{
