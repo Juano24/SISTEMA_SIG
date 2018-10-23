@@ -9,8 +9,8 @@
 
 	*/
 
-	require '/funciones/funcs.php';
-	echo "HOLA";
+	require './funciones/prueba_REQUIRE.php';
+	echo "salio";
 
 	//global $mysqli;
 	/*
