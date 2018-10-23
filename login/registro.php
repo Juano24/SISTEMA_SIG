@@ -54,17 +54,17 @@
 		}
 
 		if(count($errors)==0){
-
-
+			echo "entro";
+			/*
 			$response = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=$secret&response=$captcha");
 
 			$arr = json_decode($response, TRUE);
 
 			if($arr['success']){
 
-				$hash_password = hashPassword($password);
+				$hash_passwords = hashPassword($password);
 				$token = generateToken();
-				$Registro = registraUsuario($usuario, $hash_password, $nombre, $email, $activo, $token, $tipo_usuario);
+				$Registro = registraUsuario($usuario, $hash_passwords, $nombre, $email, $activo, $token, $tipo_usuario);
 
 				if($registro > 0){
 
@@ -96,6 +96,8 @@
 
 				$errors[] = "Error al comprobar captcha";
 			}
+
+			*/
 
 		}
 
@@ -180,11 +182,7 @@
 								</div>
 							</div>
 						</form>
-						<?php
-
-							echo resultBlock($errors);
-
-						?>
+						<?php echo resultBlock($errors); ?>
 					</div>
 				</div>
 			</div>
