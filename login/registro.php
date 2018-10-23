@@ -2,9 +2,9 @@
 <?php
 
 	require 'funciones/conexion.php';
-	//require '../funciones/conexion.php';
+	require 'funciones/funcs.php';
 	echo "hola mundo";
-	//require 'funciones/funcs.php';
+	//
 
 	//$errors = array();
 
