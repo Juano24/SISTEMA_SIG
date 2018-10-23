@@ -123,8 +123,10 @@
 	
 	function enviarEmail($email, $nombre, $asunto, $cuerpo){
 		
-		echo "entro aqui";
+
 		require_once 'PHPMailer/PHPMailerAutoload.php';
+		
+		echo "entro aqui";
 		
 		$mail = new PHPMailer();
 		$mail->isSMTP();
