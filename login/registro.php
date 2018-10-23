@@ -68,9 +68,10 @@
 				$hash_passwords = hashPassword($password);
 				$token = generateToken();
 
-				echo $token;
 
 				$registro = registraUsuario($usuario, $hash_passwords, $nombre, $email, $activo, $token, $tipo_usuario);
+
+				echo $registro;
 
 				if($registro > 0){
 
