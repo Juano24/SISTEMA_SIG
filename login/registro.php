@@ -52,7 +52,7 @@
 
 		if(emailExiste($usuario)){
 
-			$errors[] = "El correo electronico $email ya esxiste";
+			$errors[] = "El correo electronico $email ya existe";
 
 		}
 
@@ -67,6 +67,9 @@
 
 				$hash_passwords = hashPassword($password);
 				$token = generateToken();
+
+				echo $token;
+
 				$registro = registraUsuario($usuario, $hash_passwords, $nombre, $email, $activo, $token, $tipo_usuario);
 
 				if($registro > 0){
