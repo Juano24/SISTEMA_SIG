@@ -6,6 +6,8 @@
 	
 	$errors = array();
 
+	alert("joder tio");
+
 	if(!empty($_POST)){
 
 		$nombre = $mysqli->real_scape_string($_POST['nombre']);
