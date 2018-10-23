@@ -7,7 +7,6 @@ if(mysqli_connect_errno()){
 		exit();
 }
 
-echo "Hola mundo";
 
 if ($resultado = $mysqli->query("SELECT * FROM `tipo_usuario`")) {
     
