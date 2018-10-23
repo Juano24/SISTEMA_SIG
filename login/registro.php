@@ -1,19 +1,4 @@
 
-<?php
-
-	require 'funciones/conexion.php';
-	require 'funciones/funcs.php';
-
-	$errors = array();
-
-	if(!empty($_POST)){
-
-		echo "hola mundo"
-
-	}
-
-
-?>
 <html>
 	<head>
 		<title>Registro</title>
