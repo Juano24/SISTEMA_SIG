@@ -9,7 +9,7 @@
 
 	*/
 
-	require './funciones/prueba_REQUIRE.php';
+	require '../funciones/prueba_REQUIRE.php';
 	echo "salio";
 
 	//global $mysqli;
