@@ -1,5 +1,6 @@
 <?php
 	
+	
 	require '../funciones/funcs.php';
 
 	$url = 'http://'.$_SERVER["SERVER_NAME"];
@@ -21,6 +22,8 @@
 
 		echo "Paila no ha enviado nada";
 	}
+
+	
 
 
 

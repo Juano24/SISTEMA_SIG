@@ -123,14 +123,17 @@
 	
 	function enviarEmail($email, $nombre, $asunto, $cuerpo){
 		
+		echo "entro aqui";
 		require_once 'PHPMailer/PHPMailerAutoload.php';
 		
 		$mail = new PHPMailer();
 		$mail->isSMTP();
+		$mail->SMTPDebug = 2;
 		$mail->SMTPAuth = true;
 		//Set the encryption system to use - ssl (deprecated) or tls
 		//$mail->SMTPSecure = 'ssl';
-		$mail->Host = 'iglesiawesleyanacasadedios.com';
+
+		$mail->Host = 'mx1.hostinger.co';
 		$mail->Port = 587;
 		
 		$mail->Username = 'sig-sstc@iglesiawesleyanacasadedios.com';
