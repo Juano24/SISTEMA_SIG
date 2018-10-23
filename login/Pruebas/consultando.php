@@ -14,7 +14,7 @@
 	global $mysqli;
 	
 	echo "hola mundo";
-	/*
+	
 	if ($resultado = $mysqli->query("SELECT * FROM `tipo_usuario`")) {
 	    
 	    //printf($resultado);
@@ -24,5 +24,5 @@
 	    $resultado->close();
 	}
 
-	*/
+	
 ?>
