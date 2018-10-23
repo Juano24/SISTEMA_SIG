@@ -130,7 +130,7 @@
 		$mail->SMTPAuth = true;
 		//Set the encryption system to use - ssl (deprecated) or tls
 		//$mail->SMTPSecure = 'ssl';
-		$mail->Host = 'mx1.hostinger.co';
+		$mail->Host = 'iglesiawesleyanacasadedios.com';
 		$mail->Port = 587;
 		
 		$mail->Username = 'sig-sstc@iglesiawesleyanacasadedios.com';

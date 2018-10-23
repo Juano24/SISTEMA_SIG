@@ -10,12 +10,16 @@
 
 	
 	if(enviarEmail('jonathangc.awt@gmail.com', 'Jonathan', $asunto, $cuerpo)){
-		
+
 		echo "Se ha enviado un correo al email proporcionado: $email, para poder disfrutar de todos nuestros beneficios";
 
 		echo "<br><a href='index.php' >Iniciar Sesión</a>";
 	
+	}else{
+
+		echo "Paila no ha enviado nada";
 	}
+
 
 
 ?>
