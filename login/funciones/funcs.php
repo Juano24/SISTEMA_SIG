@@ -123,6 +123,8 @@
 	
 	function enviarEmail($email, $nombre, $asunto, $cuerpo){
 		
+		//Se envia el mail deacuerdo a la carpeta que lo envia en este caso lo envia desde el registro, pues toma el "require_once" como si estuviera de la raíz para otras carpetas como las pruebas uso: "require_once '../PHPMailer/PHPMailerAutoload.php'; "
+
 
 		require_once 'PHPMailer/PHPMailerAutoload.php';
 		
