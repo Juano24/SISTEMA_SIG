@@ -13,7 +13,7 @@ if(mysqli_connect_errno()){
 
 	global $mysqli;
 
-
+	echo "hola mundo";
 
 	if ($resultado = $mysqli->query("SELECT * FROM `tipo_usuario`")) {
 	    
