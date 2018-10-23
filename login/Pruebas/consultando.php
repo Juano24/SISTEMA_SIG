@@ -9,7 +9,7 @@
 
 	*/
 
-	require 'funciones/funcs.php';
+	require ('funciones/funcs.php');
 	echo "HOLA";
 
 	//global $mysqli;
