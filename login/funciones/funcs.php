@@ -126,9 +126,10 @@
 		$mail = new PHPMailer();
 		$mail->isSMTP();
 		$mail->SMTPAuth = true;
-		$mail->SMTPSecure = 'tipo de seguridad';
-		$mail->Host = 'smtp.hosting.com';
-		$mail->Port = 'puerto';
+		//Set the encryption system to use - ssl (deprecated) or tls
+		$mail->SMTPSecure = 'ssl';
+		$mail->Host = 'mx1.hostinger.co';
+		$mail->Port = 587;
 		
 		$mail->Username = 'sig-sstc@iglesiawesleyanacasadedios.com';
 		$mail->Password = 'calidad1717';
