@@ -4,6 +4,7 @@
 	require 'funciones/conexion.php';
 	require 'funciones/funcs.php';
 
+	echo "joder tio";
 	$errors = array();
 
 	if(!empty($_POST)){
