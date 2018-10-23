@@ -11,12 +11,10 @@
 
 	//require '../funciones/prueba_REQUIRE.php';
 	require '../funciones/conexion.php';
-	echo "salio";
-
-	//global $mysqli;
-	/*
+	global $mysqli;
+	
 	echo "hola mundo";
-
+	/*
 	if ($resultado = $mysqli->query("SELECT * FROM `tipo_usuario`")) {
 	    
 	    //printf($resultado);
