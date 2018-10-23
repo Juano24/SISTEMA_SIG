@@ -9,7 +9,7 @@
 
 
 
-	//require 'funciones/conexion.php';
+	require 'funciones/funcs.php';
 
 	//global $mysqli;
 
