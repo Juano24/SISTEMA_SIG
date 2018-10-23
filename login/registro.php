@@ -1,10 +1,11 @@
 
 <?php
 
-	//require 'funciones/conexion.php';
+	require 'funciones/conexion.php';
+	//require '../funciones/conexion.php';
+	echo "hola mundo";
 	//require 'funciones/funcs.php';
 
-	echo "joder tio";
 	//$errors = array();
 
 	//if(!empty($_POST)){
