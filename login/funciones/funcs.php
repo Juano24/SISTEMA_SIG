@@ -127,12 +127,10 @@
 
 
 		require_once 'PHPMailer/PHPMailerAutoload.php';
-		
-		echo "entro aqui";
 
 		$mail = new PHPMailer();
 		$mail->isSMTP();
-		$mail->SMTPDebug = 2;
+		//$mail->SMTPDebug = 2;
 		$mail->SMTPAuth = true;
 		//Set the encryption system to use - ssl (deprecated) or tls
 		//$mail->SMTPSecure = 'ssl';
