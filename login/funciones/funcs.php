@@ -129,7 +129,7 @@
 		$mail->isSMTP();
 		$mail->SMTPAuth = true;
 		//Set the encryption system to use - ssl (deprecated) or tls
-		$mail->SMTPSecure = 'ssl';
+		//$mail->SMTPSecure = 'ssl';
 		$mail->Host = 'mx1.hostinger.co';
 		$mail->Port = 587;
 		

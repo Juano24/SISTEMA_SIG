@@ -45,7 +45,7 @@
 
 		if(usuarioExiste($usuario)){
 
-			$errors[] = "El usuario $usuario ya esxiste";
+			$errors[] = "El usuario $usuario ya existe";
 
 		}
 
