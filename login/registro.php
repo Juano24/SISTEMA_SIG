@@ -77,7 +77,6 @@
 
 					$url = 'http://'.$_SERVER["SERVER_NAME"].'/SISTEMA_SIG/login/activar.php?id='.$registro.'&val='.$token;
 
-					echo $url;
 
 					$asunto = 'Wesleyana Casa De Dios Activate - SISTEMA SIG';
 					$cuerpo = "Estimado líder $nombre: <br /><br /> De Clic en el siguiente enlace para continuar con el proceso de registro  <a href='$url'>Activar Cuenta</a>";

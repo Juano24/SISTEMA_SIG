@@ -124,7 +124,7 @@
 	function enviarEmail($email, $nombre, $asunto, $cuerpo){
 		
 
-		require_once '../PHPMailer/PHPMailerAutoload.php';
+		require_once 'PHPMailer/PHPMailerAutoload.php';
 		
 		echo "entro aqui";
 
