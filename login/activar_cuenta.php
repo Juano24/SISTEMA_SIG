@@ -3,9 +3,10 @@
 	require 'funciones/conexion.php';
 	require 'funciones/funcs.php';
 
+	echo "entro";
 	if(isset($_GET["id"]) AND isset($_GET['val'])){
 
-		echo "entro";
+
 		$idUsuario =$_GET['id'];
 		$token = $_GET['val'];
 		
