@@ -25,8 +25,8 @@
 			
 			$token = generaTokenPass($user_id);
 
-
-			$url = 'http://'.$_SERVER["SERVER_NAME"].'/SISTEMA_SIG/login/cambia_pass.php?user_id='.$registro.'&token='.$token;
+			
+			$url = 'http://'.$_SERVER["SERVER_NAME"].'/SISTEMA_SIG/login/cambia_pass.php?user_id='.$user_id.'&token='.$token;
 
 			$asunto = 'Wesleyana Casa De Dios Recuperar contraseña - SISTEMA SIG';
 
