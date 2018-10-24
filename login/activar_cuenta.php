@@ -5,11 +5,13 @@
 
 	if(isset($_GET["id"]) AND isset($_GET['val'])){
 
-		$token = $_GET['val'];
+		echo "entro";
 		$idUsuario =$_GET['id'];
+		$token = $_GET['val'];
+		
 
 		$mensaje = validaIdToken($idUsuario, $token)
-
+		//http://iglesiawesleyanacasadedios.com/SISTEMA_SIG/login/activar_cuenta.php?id=19&val=532263d654a89d52b9d7b9bcffa20f9e
 	}
 
 ?>
@@ -35,3 +37,4 @@
 		</div>
 	</body>
 </html>
+
