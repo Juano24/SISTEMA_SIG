@@ -75,7 +75,7 @@
 
 				if($registro > 0){
 
-					$url = 'http://'.$_SERVER["SERVER_NAME"].'/SISTEMA_SIG/login/activar.php?id='.$registro.'&val='.$token;
+					$url = 'http://'.$_SERVER["SERVER_NAME"].'/SISTEMA_SIG/login/activar_cuenta.php?id='.$registro.'&val='.$token;
 
 
 					$asunto = 'Wesleyana Casa De Dios Activate - SISTEMA SIG';
