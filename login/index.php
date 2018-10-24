@@ -1,3 +1,22 @@
+<?php
+	require 'funciones/conexion.php';
+	require 'funciones/funcs.php';
+	$errors = array();
+
+	if(!empty($_POST)){
+		$usuario = $mysqli->real_escape_string($_POST['usuario']);
+		$password = $mysqli->real_escape_string($_POST['password']);
+
+		if(isNullLogin($usuario, $password)){
+
+			$errors[] = "Debe llenar todos los campos";
+		}
+		
+		$errors[] = login($usuario, $password);
+	}
+
+?>
+
 <html>
 	<head>
 		<title>Login</title>
@@ -48,6 +67,7 @@
 								</div>
 							</div>    
 						</form>
+						<?php echo resultBLock($errors); ?>
 					</div>                     
 				</div>  
 			</div>
