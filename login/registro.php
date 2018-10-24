@@ -79,7 +79,7 @@
 
 
 					$asunto = 'Wesleyana Casa De Dios Activate - SISTEMA SIG';
-					$cuerpo = "Estimado líder".$nombre.": <br /><br /> De Clic en el siguiente enlace para continuar con el proceso de registro  <a href='$url'>Activar Cuenta</a>";
+					$cuerpo = "Estimado líder ".$nombre.": <br /><br /> De Clic en el siguiente enlace para continuar con el proceso de registro  <a href='$url'>Activar Cuenta</a>";
 
 					if(enviarEmail($email, $nombre, $asunto, $cuerpo))
 					{
