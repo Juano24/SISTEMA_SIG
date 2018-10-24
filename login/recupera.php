@@ -1,3 +1,55 @@
+<?php
+	require 'funciones/conexion.php';
+	require 'funciones/funcs.php';
+	$errors = array();
+
+	session_start();
+	
+	if(isset($_SESSION["id_usuario"])){
+		header("Location: welcome.php");
+	}
+
+
+
+	if(!empty($_POST)){
+		$email = $mysqli->real_escape_string($_POST['email']);
+
+		if(!isEmail($email)){
+			$errors[] = "Email no valido";
+		}
+
+		if(emailExiste($email)){
+
+			$user_id = getValor('id', 'correo', $email);
+			$nombre = getValor('nombre', 'correo', $email);
+			
+			$token = generaTokenPass($user_id);
+
+
+			$url = 'http://'.$_SERVER["SERVER_NAME"].'/SISTEMA_SIG/login/cambia_pass.php?id='.$registro.'&val='.$token;
+
+			$asunto = 'Wesleyana Casa De Dios Recuperar contraseña - SISTEMA SIG';
+
+			$cuerpo = "Hola $nombre: <br /><br />Se ha solicitado un reinicio de contrase&ntilde;a. <br/><br/>Para restaurar la contrase&ntilde;a, visita la siguiente direcci&oacute;n: <a href='$url'>$url</a>";
+			
+			if(enviarEmail($email, $nombre, $asunto, $cuerpo)){
+				echo "Hemos enviado un correo electronico a las dirección $email para restablecer tu password.<br />";
+				echo "<a href='index.php' >Iniciar Sesion</a>";
+				exit;
+			}else {
+				$errors[] = "La direccion de correo electronico no existe";
+			}
+
+
+
+		}
+	}
+
+
+?>
+
+
+
 <html>
 	<head>
 		<title>Recuperar Password</title>
