@@ -1,8 +1,7 @@
 <?php
 
-	//require 'funciones/conexion.php';
-	//require 'funciones/funcs.php';
-
+	require 'funciones/conexion.php';
+	require 'funciones/funcs.php';
 	echo "entro";
 	
 	if(isset($_GET["id"]) AND isset($_GET['val'])){
