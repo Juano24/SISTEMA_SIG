@@ -8,7 +8,7 @@
 		$token = $_GET['val'];
 		$idUsuario =$_GET['id'];
 
-		$mensaje = validaIdToken($id, $token)
+		$mensaje = validaIdToken($idUsuario, $token)
 
 	}
 
