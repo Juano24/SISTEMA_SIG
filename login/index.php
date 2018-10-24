@@ -1,4 +1,5 @@
 <?php
+	session_start();
 	require 'funciones/conexion.php';
 	require 'funciones/funcs.php';
 	$errors = array();
