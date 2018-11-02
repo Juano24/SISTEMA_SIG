@@ -21,21 +21,23 @@
 <html>
 	<head>
 		<title>Login</title>
-		
-		<link rel="stylesheet" href="css/bootstrap.min.css" >
-		<link rel="stylesheet" href="css/bootstrap-theme.min.css" >
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="../../assets/css/bootstrap-grid.min.css" >
+		<link rel="stylesheet" href="../../assets/css/bootstrap-reboot.min.css" >
+		<link rel="stylesheet" href="../../assets/css/bootstrap.min.css" >
+		<link rel="stylesheet" href="../../assets/css/mystyle.css">
 		<script src="js/bootstrap.min.js" ></script>
 		
 	</head>
 	
-	<body>
+	<body id="loigin">
 		
-		<div class="container">    
-			<div id="loginbox" style="margin-top:50px;" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">                    
+		<div>    
+			<div id="" class=" col-xs-12 col-md-4 col-lg-4 col-xl-4 bg-lightrans p-5 m-5 float-right rounded">                    
 				<div class="panel panel-info" >
 					<div class="panel-heading">
-						<div class="panel-title">Iniciar Sesi&oacute;n</div>
-						<div style="float:right; font-size: 80%; position: relative; top:-10px"><a href="recupera.php">¿Se te olvid&oacute; tu contraseña?</a></div>
+						<div class="panel-title"><h5 class="font-weight-bold text-dark">Iniciar Sesión</h5></div>
+						<div style="float:right; font-size: 80%; position: relative; top:-10px"><a href="recupera.php">¿Se te olvidó; tu contraseña?</a></div>
 					</div>     
 					
 					<div style="padding-top:30px" class="panel-body" >
@@ -56,7 +58,7 @@
 							
 							<div style="margin-top:10px" class="form-group">
 								<div class="col-sm-12 controls">
-									<button id="btn-login" type="submit" class="btn btn-success">Iniciar Sesi&oacute;n</a>
+									<button id="btn-login" type="submit" class="btn btn-dark">Iniciar Sesión</a>
 								</div>
 							</div>
 							
