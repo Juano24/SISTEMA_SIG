@@ -33,7 +33,7 @@
 	<body id="loigin">
 		
 		<div>    
-			<div id="" class=" col-xs-12 col-md-4 col-lg-4 col-xl-4 bg-lightrans p-5 m-5 float-right rounded">                    
+			<div id="" class="  clo- 12 col-xs-12 col-md-4 col-lg-4 col-xl-4 bg-lightrans p-5 m-5 float-right rounded">                    
 				<div class="panel panel-info" >
 					<div class="panel-heading">
 						<div class="panel-title"><h5 class="font-weight-bold text-dark">Iniciar Sesión</h5></div>
